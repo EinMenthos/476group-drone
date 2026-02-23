@@ -2,14 +2,21 @@ from djitellopy import tello
 #import tellopy     //not needed for this code
 import time
 
-#evable venv
+#enable venv
 #source source myenv/bin/activate 
 
-# Check if firewall allow incoming connections:
+# check ping
+# ping 192.168.10.1
+
+# Allow Local Network Access (macOS Sequoia/Big Sur): (this is it!!!)
+# Go to System Settings > Privacy & Security > Local Network. 
+# Ensure your terminal app (Terminal, iTerm, PyCharm, VS Code) is enabled.
+
+# Check if firewall allow incoming connections: (not work)
 # Python (whichever interpreter VS Code is using)
 # Visual Studio Code (after adding, it is shown as CODE)
 
-#do disable firewall completly
+#do disable firewall completely (did not work)
 # MACOS -> SYSTEM -> NETWORK -> Firewall
 
 #check if there is any app using port 8889
