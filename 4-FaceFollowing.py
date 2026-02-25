@@ -27,7 +27,7 @@ print(me.get_battery())
 me.streamoff()
 me.streamon()
 me.takeoff()
-me.move_up(20)
+me.move_up(10)
 
 while True:
     # _, img = cap.read()

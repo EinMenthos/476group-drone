@@ -21,6 +21,8 @@ from cvzone.FaceDetectionModule import FaceDetector
 # Finally found that mediapipe is wrong version.
 
 # pip install djitellopy opencv-python cvzone "mediapipe==0.10.21"
+# or
+# pip install -r requirements.txt
 # python -c "import mediapipe as mp; print(mp.__version__); print(hasattr(mp,'solutions')); print(mp.solutions.face_detection)"
 # return TRUE!!!
 
