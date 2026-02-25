@@ -13,10 +13,16 @@ from cvzone.FaceDetectionModule import FaceDetector
 # python3.11 -m venv .venv311
 # source .venv311/bin/activate
 # pip install --upgrade pip
-# pip install djitellopy opencv-python cvzone "mediapipe==0.10.21"
-# python -c "import mediapipe as mp; print(mp.__version__); print(hasattr(mp,'solutions')); print(mp.solutions.face_detection)"
+
+#by using those two commands, found that current mediapipe version dropped solution.
+# python -c "import mediapipe as mp; print(mp.__version__); print(hasattr(mp,'solutions'))"
+# python -c "import mediapipe, os; print(os.listdir(os.path.dirname(mediapipe.__file__)))"
 
 # Finally found that mediapipe is wrong version.
+
+# pip install djitellopy opencv-python cvzone "mediapipe==0.10.21"
+# python -c "import mediapipe as mp; print(mp.__version__); print(hasattr(mp,'solutions')); print(mp.solutions.face_detection)"
+# return TRUE!!!
 
 me = Tello()
 me.connect()
