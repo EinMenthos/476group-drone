@@ -26,8 +26,8 @@ me.connect()
 print(me.get_battery())
 me.streamoff()
 me.streamon()
-me.takeoff()
-me.move_up(10)
+#me.takeoff()
+#me.move_up(10)
 
 while True:
     # _, img = cap.read()
@@ -66,6 +66,6 @@ while True:
     cv2.imshow("Image Stacked", imgStacked)
 
     if cv2.waitKey(5) & 0xFF == ord('q'):
-        me.land()
+        #me.land()
         break
 cv2.destroyAllWindows()
